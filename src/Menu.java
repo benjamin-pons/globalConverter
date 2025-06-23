@@ -1,14 +1,15 @@
+package src;
 import java.util.Scanner;
 
 public class Menu {
     private Scanner scanner;
+    public String input;
 
     public Menu() {
         this.scanner = new Scanner(System.in);
     }
 
     public void textInput() {
-        String input;
         System.out.println("Veuillez saisir un texte :");
         input = scanner.nextLine();
         while (input.matches(".*[!@#$%^&*()_+=<>?/;:'\"\\\\|\\[\\]{}~-].*")) {
@@ -22,7 +23,7 @@ public class Menu {
     public String choiceBase() {
         String base;
         while (true) {
-            System.out.println("Choisissez la base de destination :");
+            System.out.println("\nChoisissez la base de destination :");
             System.out.println("h : hexadecimal");
             System.out.println("o : octal");
             System.out.println("d : decimal");
