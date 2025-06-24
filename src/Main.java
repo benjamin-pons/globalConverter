@@ -19,12 +19,20 @@ public class Main {
             System.out.println("Octal: " + output);
 
         } else if (base.equals("d")) { // Decimal conversion
-
+            output = StringtoDec.toDec(menu.input);
+            System.out.println("Decimal: " + output);
             
         } else if (base.equals("b")) { // Binary conversion
-
+            output= StringtoBin.toBin(menu.input);
+            System.out.println("Binaire: " + output);
 
         } else if (base.equals("t")) {
+            output = Tostring.BintoString(menu.input);
+            System.out.println("Texte: " + output);
+
+        } else {
+            System.out.println("Base non reconnue. Veuillez choisir une base valide.");
+            return;
 
 
         }

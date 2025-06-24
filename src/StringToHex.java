@@ -38,9 +38,4 @@ public class StringtoHex {
         }
         return hex.toString();
     }
-
-    public static void main(String[] args) {
-        String s = "Zyb de retour au summer split !";
-        System.out.println(toHex(s));
-    }
 }
