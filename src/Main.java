@@ -26,9 +26,15 @@ public class Main {
             output= StringtoBin.toBin(menu.input);
             System.out.println("Binaire: " + output);
 
-        } else if (base.equals("t")) {
+        } else if (base.equals("t")) { // Text conversion
             output = Tostring.DecToString(menu.input);
             System.out.println("Texte: " + output);
+
+        } else if (base.equals("c")) { // Caesar Cipher
+            output = CaesarCipher.CCipher(menu.input);
+            System.out.println("Chiffrement César: " + output);
+
+            
 
         } else {
             System.out.println("Base non reconnue. Veuillez choisir une base valide.");
