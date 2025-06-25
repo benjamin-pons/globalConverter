@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Binaire: " + output);
 
         } else if (base.equals("t")) {
-            output = Tostring.BintoString(menu.input);
+            output = Tostring.DecToString(menu.input);
             System.out.println("Texte: " + output);
 
         } else {
