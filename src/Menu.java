@@ -30,8 +30,11 @@ public class Menu {
             System.out.println("d : decimal");
             System.out.println("b : binary");
             System.out.println("t : text");
+            System.out.println("c : chiffrement César");
             base = scanner.nextLine().trim().toLowerCase();
-            if (base.equals("h") || base.equals("o") || base.equals("d") || base.equals("b") || base.equals("t")){
+          
+            if (base.equals("h") || base.equals("o") || base.equals("d") || base.equals("b") || base.equals("t") || base.equals("c")) {
+
                 return base;
             } else {
                 System.out.println("Base non reconnue. Veuillez choisir une base valide.");

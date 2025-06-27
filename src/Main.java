@@ -27,7 +27,6 @@ public class Main {
             output= StringtoBin.toBin(menu.input);
             System.out.println("Binaire: " + output);
 
-
         } else if (base.equals("t")) {
             textbase = menu.choiceTextBase();
             if (menu.input.matches(".*[a-zA-Z].*")) {
@@ -46,7 +45,14 @@ public class Main {
                 output = Tostring.BintoString(menu.input);
                 System.out.println("Texte: " + output);
             }
+
             output = Tostring.DecToString(menu.input);
+
+        } else if (base.equals("c")) { // Caesar Cipher
+            output = CaesarCipher.CCipher(menu.input);
+            System.out.println("Chiffrement César: " + output);
+
+            
 
         } else {
             System.out.println("Base non reconnue. Veuillez choisir une base valide.");
