@@ -9,9 +9,9 @@ public class StringtoOct {
             int ascii = (int) input.charAt(i);
 
             // Convert ASCII value to octal
-            int digit1 = ascii / 64; // First octal caracter
-            int digit2 = (ascii % 64) / 8; // Second octal caracter
-            int digit3 = ascii % 8; // Third octal caracter
+            int digit1 = ascii / 64;
+            int digit2 = (ascii % 64) / 8;
+            int digit3 = ascii % 8;
 
             // Find the octal character corresponding to the ASCII value and append it
             oct.append((char) ('0' + digit1));

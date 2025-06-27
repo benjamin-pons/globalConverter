@@ -1,15 +1,14 @@
 package src;
 
 public class Tostring {
-    public static String BintoString(String input)
-    {
+    public static String BintoString(String input) {
         StringBuilder result = new StringBuilder();
         String[] binaryValues = input.split(" ");
 
         for (String bin : binaryValues) {
             int ascii = 0;
             int j = 0;
-            for (int i = 7; i >= 0; i --) {
+            for (int i = 7; i >= 0; i--) {
                 ascii += (bin.charAt(j) - '0') * (Math.pow(2, i));
                 j++;
             }
@@ -21,7 +20,7 @@ public class Tostring {
         return result.toString();
     }
 
-    public static String HexToString(String input){
+    public static String HexToString(String input) {
         StringBuilder result = new StringBuilder();
         String[] hexValues = input.split(" ");
 
@@ -31,7 +30,7 @@ public class Tostring {
             for (int i = 0; i < hex.length(); i++) {
                 char c = hex.charAt(i);
                 if (c >= 'A' && c <= 'F') {
-                    ascii = ascii * 16 + (c - 'A' + 10);
+                    ascii = ascii * 16 + (c - 'A' + 10); // Convert A-F to 10-15
                 } else if (c >= '0' && c <= '9') {
                     ascii = ascii * 16 + (c - '0');
                 } else {

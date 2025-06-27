@@ -8,10 +8,9 @@ public class StringtoHex {
 
         StringBuilder hex = new StringBuilder();
         
-        // Go through each character in the input string
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            int ascii = (int) c; // Convert character to ASCII value
+            int ascii = (int) c;
 
             // Convert ASCII value to hexadecimal
             int quotient = ascii / 16;

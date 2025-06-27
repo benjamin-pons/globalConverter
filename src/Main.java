@@ -29,9 +29,7 @@ public class Main {
 
         } else if (base.equals("t")) {
             textbase = menu.choiceTextBase();
-            if (menu.input.matches(".*[a-zA-Z].*")) {
-                System.out.println("Erreur : votre message contient déjà du texte. Veuillez choisir une autre base.");
-            }
+
             if (textbase.equals("h")) {
                 output = Tostring.HexToString(menu.input);
                 System.out.println("Texte: " + output);
@@ -44,9 +42,10 @@ public class Main {
             } else if (textbase.equals("b")) {
                 output = Tostring.BintoString(menu.input);
                 System.out.println("Texte: " + output);
+            } else {
+                System.out.println("Base non reconnue. Erreur.");
+                return;
             }
-
-            output = Tostring.DecToString(menu.input);
 
         } else if (base.equals("c")) { // Caesar Cipher
             output = CaesarCipher.CCipher(menu.input);
