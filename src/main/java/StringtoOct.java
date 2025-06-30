@@ -1,5 +1,3 @@
-package src;
-
 public class StringtoOct {
     public static String toOct(String input) {
         StringBuilder oct = new StringBuilder();

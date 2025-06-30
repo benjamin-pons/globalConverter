@@ -1,5 +1,3 @@
-package src;
-
 public class StringtoDec {
     public static String toDec(String input) {
         StringBuilder decimal = new StringBuilder();

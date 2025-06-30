@@ -1,5 +1,3 @@
-package src;
-
 public class StringtoBin {
     public static String toBin(String input) {
         // Binary is represented by eight bits for each ASCII character

@@ -1,5 +1,3 @@
-package src;
-
 public class Tostring {
     public static String BintoString(String input) {
         StringBuilder result = new StringBuilder();

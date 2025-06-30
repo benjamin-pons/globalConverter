@@ -1,5 +1,3 @@
-package src;
-
 public class StringtoHex {
     public static String toHex(String input) {
         // Hexadecimal is represented by two characters for each ASCII character
