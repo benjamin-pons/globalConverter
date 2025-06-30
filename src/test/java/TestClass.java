@@ -1,8 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class CaesarCipherTest {
-
+public class TestClass {
+    
     @Test
     public void testEncryptionHex() {
         String output = StringtoHex.toHex("Hello World");
